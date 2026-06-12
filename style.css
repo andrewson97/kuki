@@ -274,6 +274,54 @@ em {
 }
 .map-wrap iframe { display: block; }
 
+/* QR / Follow section */
+.qr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.qr-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: var(--ink);
+}
+.qr-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+.qr-card img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  border-radius: 8px;
+  background: white;
+}
+.qr-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.qr-emoji { font-size: 1.8rem; line-height: 1; }
+.qr-meta h3 { margin: 0; font-size: 1.15rem; }
+.qr-meta p { margin: 0; font-size: 0.9rem; color: var(--ink-soft); }
+.qr-cta {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  font-weight: 700;
+}
+
 /* Footer */
 .footer {
   background: var(--ink);
