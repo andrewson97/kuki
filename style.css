@@ -277,10 +277,13 @@ em {
 /* QR / Follow section */
 .qr-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
-  max-width: 540px;
+  max-width: 800px;
   margin: 0 auto;
+}
+@media (max-width: 720px) {
+  .qr-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 540px; }
 }
 .qr-card {
   background: white;
